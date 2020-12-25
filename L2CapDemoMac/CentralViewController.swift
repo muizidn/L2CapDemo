@@ -12,7 +12,7 @@ import L2Cap
 
 class CentralViewController: NSViewController {
     
-    @IBOutlet weak var scanSwitch: NSSwitch!
+    @IBOutlet weak var scanSwitch: NSButton!
     @IBOutlet weak var inputText: NSTextField!
     @IBOutlet weak var byteLabel: NSTextField!
     @IBOutlet weak var sendButton: NSButton!
@@ -70,7 +70,7 @@ class CentralViewController: NSViewController {
         }
     }
     
-    @IBAction func scanSwitched(_ sender: NSSwitch) {
+    @IBAction func scanSwitched(_ sender: NSButton) {
         self.l2capCentral.scan = sender.state == .on
     }
     

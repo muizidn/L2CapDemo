@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -736,25 +736,29 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewA-aP-pla">
-                                <rect key="frame" x="20" y="218" width="410" height="62"/>
+                                <rect key="frame" x="20" y="223" width="410" height="57"/>
                                 <subviews>
                                     <stackView distribution="fillProportionally" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A0d-MM-Crq">
-                                        <rect key="frame" x="0.0" y="41" width="77" height="21"/>
+                                        <rect key="frame" x="0.0" y="41" width="96" height="16"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kk6-GR-ush">
-                                                <rect key="frame" x="-2" y="5" width="35" height="16"/>
+                                                <rect key="frame" x="-2" y="0.0" width="35" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Scan" id="oei-Rm-2Fh">
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-ly-YvR">
-                                                <rect key="frame" x="37" y="-2" width="42" height="24"/>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5We-ZV-6jA">
+                                                <rect key="frame" x="37" y="0.0" width="61" height="18"/>
+                                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Gka-Nk-nTl">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
                                                 <connections>
-                                                    <action selector="scanSwitched:" target="gKi-6e-Fue" id="eQh-eV-p5e"/>
+                                                    <action selector="scanSwitched:" target="gKi-6e-Fue" id="HD0-gr-JfR"/>
                                                 </connections>
-                                            </switch>
+                                            </button>
                                         </subviews>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
@@ -827,7 +831,7 @@
                     <connections>
                         <outlet property="byteLabel" destination="ckt-eq-Mub" id="vkb-za-khh"/>
                         <outlet property="inputText" destination="67q-3c-Ta0" id="xAu-wG-98S"/>
-                        <outlet property="scanSwitch" destination="7eJ-ly-YvR" id="I29-uV-ozx"/>
+                        <outlet property="scanSwitch" destination="5We-ZV-6jA" id="90R-rv-rOk"/>
                         <outlet property="sendButton" destination="MHN-0y-YD7" id="IBe-3h-FWg"/>
                     </connections>
                 </viewController>
@@ -844,25 +848,29 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOP-ZY-gbi">
-                                <rect key="frame" x="20" y="235" width="430" height="45"/>
+                                <rect key="frame" x="20" y="240" width="430" height="40"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Flq-Mo-fYz">
-                                        <rect key="frame" x="0.0" y="24" width="104" height="21"/>
+                                        <rect key="frame" x="0.0" y="24" width="123" height="16"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lOA-ZE-49g">
-                                                <rect key="frame" x="-2" y="5" width="62" height="16"/>
+                                                <rect key="frame" x="-2" y="0.0" width="62" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Advertise" id="TYa-Lp-zxh">
                                                     <font key="font" usesAppearanceFont="YES"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <switch horizontalHuggingPriority="750" verticalHuggingPriority="750" baseWritingDirection="leftToRight" alignment="left" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-fr-L7h">
-                                                <rect key="frame" x="64" y="-2" width="42" height="24"/>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EH7-n6-NkK">
+                                                <rect key="frame" x="64" y="0.0" width="61" height="18"/>
+                                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="VsL-Kp-L14">
+                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
                                                 <connections>
-                                                    <action selector="advertiseSwitched:" target="1Vm-J3-fgq" id="EUs-tF-4Yp"/>
+                                                    <action selector="advertiseSwitched:" target="1Vm-J3-fgq" id="QqP-6g-dd5"/>
                                                 </connections>
-                                            </switch>
+                                            </button>
                                         </subviews>
                                         <visibilityPriorities>
                                             <integer value="1000"/>
@@ -899,7 +907,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="advertiseSwitch" destination="c3L-fr-L7h" id="NN6-gX-9tl"/>
+                        <outlet property="advertiseSwitch" destination="EH7-n6-NkK" id="ECv-YC-Cig"/>
                         <outlet property="outputLabel" destination="R5k-0m-shb" id="BIm-D2-NAs"/>
                     </connections>
                 </viewController>

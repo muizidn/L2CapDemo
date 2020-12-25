@@ -12,7 +12,7 @@ import L2Cap
 
 class PeripheralViewController: NSViewController {
     
-    @IBOutlet weak var advertiseSwitch: NSSwitch!
+    @IBOutlet weak var advertiseSwitch: NSButton!
     @IBOutlet weak var outputLabel: NSTextField!
     
     private var peripheral: L2CapPeripheral!
@@ -43,7 +43,7 @@ class PeripheralViewController: NSViewController {
         self.bytesReceived = 0
     }
     
-    @IBAction func advertiseSwitched(_ sender: NSSwitch) {
+    @IBAction func advertiseSwitched(_ sender: NSButton) {
         self.peripheral.publish = sender.state == .on
     }
 }
